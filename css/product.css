@@ -1,0 +1,133 @@
+/* NAVIGATION LOGOUT BUTTON */
+
+nav button{
+    border: none;
+    background: red;
+    width: 120px;
+    height: 40px;
+    color: white;
+    border-radius: 5px;
+}
+
+nav button a{
+    color: white;
+    text-decoration: none;
+}
+
+
+/* HEADER */
+
+header input{
+    background: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 350px;
+    height: 50px;
+    margin: 15px;
+    padding: 5px;
+    color: white;
+
+}
+
+.header-padding{
+    padding: 20px !important;
+}
+
+/* CART SECTION */
+
+section.cart{
+    width: 45%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+    margin: 20px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.cart .close{
+    color: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+.cart h3{
+    color: rgb(73, 73, 73);
+    margin: 10px;
+}
+
+.cart button.start{
+    margin: 10px;
+    border: none;
+    background: red;
+    width: 100px;
+    height: 40px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+/* PRODUCT SECTION */
+
+
+section.product-game{
+    padding: 20px;
+}
+
+.product-game h2{
+    padding: 10px;
+}
+
+.sale-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+
+/* view more button */
+.view-more{
+    display: flex;
+    background: silver;
+}
+
+.view-more button{
+    margin: auto;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 30px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:768px){
+
+    /* NAVIGATION LOGOUT BUTTON */
+
+    nav button{
+        width: 90px;
+        height: 35px;
+    }
+    header input{
+        width: 250px;
+        height: 40px;
+    
+    }
+
+    .game-box{
+        width:100%;
+    }
+
+}

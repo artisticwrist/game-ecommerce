@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+
+body{
+    background: rgb(36, 38, 41);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* SCROLL ANIMATION */
+
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+    transform: translateX(-100%);
+}
+
+.show{
+    filter: blur(0);
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.logo:nth-child(2){
+    transition-delay: 200ms;
+}
+
+.logo:nth-child(3){
+    transition-delay: 300ms;
+}
+
+.logo:nth-child(4){
+    transition-delay: 600ms;
+}
+
+/* DOM MANIPULATION */
+
+.display-none{
+    display: none;
+}
+
+.display-block{
+    display: block;
+}
+
+.display-flex{
+    display: flex
+}
+
+/* NAVIGATION BAR */
+
+nav{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+nav button{
+    cursor: pointer;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav span{
+    color: red;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style-type: none;
+    padding: 5px;
+    margin: 5px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* HEADER */
+
+
+header{
+    padding: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header h1, header p, header button{
+    text-align: center;
+    margin: 15px 0px;
+}
+
+
+header h1{
+    font-size: 50px;
+}
+
+
+header button{
+    border: none;
+    background: red;
+    width: 120px;
+    height: 40px;
+    color: white;
+    border-radius: 5px;
+    transition: .2s ease;
+}
+
+header button:hover{
+    border: 2px solid white;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+header button a{
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+
+/* SECTION LATEST GAME && SECTION POPULAR GAMES */
+
+
+section.latest-game, section.popular-game{
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+section.latest-game h2, section.popular-game h2{
+    width: 80%;
+    margin: 30px 0px;
+    text-align: left;
+}
+
+.game_flex{
+    width: 30%;
+    height: 35vh;
+    margin: 5px;
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(87, 87, 87, 0.507);
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.overlay-view{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(109, 109, 109, 0.918);
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.overlay h3, .overlay p, .overlay button{
+    margin: 2px;
+}
+
+.overlay button{
+    width: 80px;
+    border-radius: 3px;
+    border: none;
+    padding: 5px;
+}
+
+.overlay button a{
+    text-decoration: none;
+    color: rgb(48, 48, 48);
+}
+
+
+/* ABOUT GAME ZONE X */
+
+.about-gamezonex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+.about-gamezonex h2, .about-gamezonex p{
+    margin: 10px;
+}
+
+
+.img, .about-paragraph{
+    width: 50%;
+}
+
+.about-paragraph h2{
+    margin: 20px 100px;
+    text-align: left;
+    width: 100%;
+}
+
+/* game images */
+
+.bg{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* FOOTER */
+
+
+footer p{
+    text-align: center;
+    width: 100%;
+    margin: 20px 0px;
+}
+
+@media only screen and (max-width:768px){
+
+/* NAVIGATION BAR */
+
+nav ul li{
+    list-style-type: none;
+    padding: 2px;
+    margin: 2px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.home-btn{
+    display: none;
+}
+
+  
+/* HEADER */
+
+
+header{
+    padding: 20px;
+}
+
+
+/* SECTION LATEST GAME && SECTION POPULAR GAMES */
+
+
+section.latest-game, section.popular-game{
+    padding: 20px;
+}
+
+.game_flex{
+    width: 100%;
+    height: 40vh;
+    margin: 20px;
+    position: relative;
+}
+}
